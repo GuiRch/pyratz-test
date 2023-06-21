@@ -1,6 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 const Table = () => {
+    const [cryptoData, setCryptoData] = useState([]);
+    useEffect(() => {
+        const fetchData = async () => {
+          try {
+            const response = await axios.get(
+                "https://api.coingecko.com/api/v3/coins/markets?vs_currency=eur&order=market_cap_desc&per_page=10&page=1&price_change_percentage=1h%2C24h%2C7d"
+            );
+            setCryptoData(response.data);
+          } catch (error) {
+            console.log(error);
+          }
+        };
+      
+        fetchData();
+      }, []);
+
   const data = [
     {
       rank: 1,
@@ -74,21 +91,22 @@ const Table = () => {
             <th>Volume (24 h)</th>
             <th>Offre en Circulation</th>
           </tr>
-          {data.map((val, key) => (
+          {cryptoData.map((val, key) => (
             <tr key={key}>
-              <td>{val.rank}</td>
-              <td>{val.name}</td>
-              <td>{val.price}</td>
-              <td>{val.hourly}</td>
-              <td>{val.daily}</td>
-              <td>{val.weekly}</td>
-              <td>{val.marketCap}</td>
-              <td>{val.volume}</td>
-              <td>{val.supply}</td>
+              <td>{val.market_cap_rank}</td>
+              <td>{val.id} {val.symbol}</td>
+              <td>{val.current_price}</td>
+              <td>{val.price_change_percentage_1h_in_currency}</td>
+              <td>{val.price_change_percentage_24h_in_currency}</td>
+              <td>{val.price_change_percentage_7d_in_currency}</td>
+              <td>{val.market_cap}</td>
+              <td>{val.total_volume}</td>
+              <td>{val.circulating_supply}</td>
             </tr>
           ))}
         </tbody>
       </table>
+      {console.log(cryptoData)}
     </div>
   );
 };
