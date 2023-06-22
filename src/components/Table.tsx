@@ -54,7 +54,7 @@ const Table = () => {
           </tbody>
         </table>
       )}
-      {console.log(cryptoData)}
+      {/* {console.log(cryptoData)} */}
     </>
   );
 };

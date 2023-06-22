@@ -1,4 +1,5 @@
 import { React } from 'react';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 const Header = () => {
     return(
@@ -9,7 +10,7 @@ const Header = () => {
             <span>Communauté</span>
             <span>Produits</span>
             <span>Apprendre</span>
-            <button>Connect your wallet</button>
+            <ConnectButton label="Connect your wallet"/>
         </div>
     )
 }
