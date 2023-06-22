@@ -1,12 +1,18 @@
-import { type Session } from "next-auth";
-import { SessionProvider } from "next-auth/react";
 import { type AppType } from "next/app";
 import { api } from "~/utils/api";
+
+// Style & fonts
 import "~/styles/globals.css";
 import { Inter } from "next/font/google";
-import "@rainbow-me/rainbowkit/styles.css";
 
+// Next Auth
+import { type Session } from "next-auth";
+import { SessionProvider } from "next-auth/react";
+
+// RainbowKit
+import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
+// Wagmi
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
 import { mainnet, polygon, optimism, arbitrum } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
