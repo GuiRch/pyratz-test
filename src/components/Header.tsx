@@ -2,7 +2,7 @@ import { React } from 'react';
 
 const Header = () => {
     return(
-        <div style={{display: 'flex', gap: 10, alignItems: 'center', justifyContent: 'center', backgroundColor: 'white', width: '100%'}}>
+        <div style={{display: 'flex', gap: 10, alignItems: 'center', justifyContent: 'center', backgroundColor: 'white', width: '100%', fontWeight: 600, fontSize: 15}}>
             <img src="./images/Coinmarketcap.png" style={{widht: 50, height: 50}}/>
             <span>Crypto-Monnaies</span>
             <span>Plateforme d'échanges</span>
