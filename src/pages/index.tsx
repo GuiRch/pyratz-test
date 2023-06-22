@@ -2,10 +2,11 @@ import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
 import Link from "next/link";
 import { api } from "~/utils/api";
+import { Inter } from 'next/font/google'
 // Components
 import Header from "~/components/Header.tsx";
 import Table from "~/components/Table.tsx";
-import { Inter } from 'next/font/google'
+import Trends from "~/components/Trends.tsx";
 
 export default function Home() {
   // const hello = api.example.hello.useQuery({ text: "from tRPC" });
@@ -21,19 +22,11 @@ export default function Home() {
         <Header></Header>
         <div className="flex flex-col">
           <div>
-            <h1 className="font-bold text-base">Top 100 des Crypto-monnaies par capilalisation de marché</h1>
+            <h1 className="font-bold text-2xl">Top 100 des Crypto-monnaies par capilalisation de marché</h1>
             <span className="font-normal text-xs text-stone-500">La capitalisation boursièrere globale ...</span>
           </div>
           <div className="flex gap-10">
-            <div
-              style={{
-                borderStyle: "solid",
-                borderColor: "black",
-                borderWidth: 2,
-              }}
-            >
-              Tendances
-            </div>
+            <Trends></Trends>
             <div
               style={{
                 borderStyle: "solid",

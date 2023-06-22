@@ -1,0 +1,147 @@
+{
+    "coins": [
+      {
+        "item": {
+          "id": "baby-doge-coin",
+          "coin_id": 16125,
+          "name": "Baby Doge Coin",
+          "symbol": "BABYDOGE",
+          "market_cap_rank": 140,
+          "thumb": "https://assets.coingecko.com/coins/images/16125/thumb/babydoge.jpg?1676303229",
+          "small": "https://assets.coingecko.com/coins/images/16125/small/babydoge.jpg?1676303229",
+          "large": "https://assets.coingecko.com/coins/images/16125/large/babydoge.jpg?1676303229",
+          "slug": "baby-doge-coin",
+          "price_btc": 5.0424462260097436e-14,
+          "score": 0
+        }
+      },
+      {
+        "item": {
+          "id": "matic-network",
+          "coin_id": 4713,
+          "name": "Polygon",
+          "symbol": "MATIC",
+          "market_cap_rank": 13,
+          "thumb": "https://assets.coingecko.com/coins/images/4713/thumb/matic-token-icon.png?1624446912",
+          "small": "https://assets.coingecko.com/coins/images/4713/small/matic-token-icon.png?1624446912",
+          "large": "https://assets.coingecko.com/coins/images/4713/large/matic-token-icon.png?1624446912",
+          "slug": "polygon",
+          "price_btc": 0.000022546849836441342,
+          "score": 1
+        }
+      },
+      {
+        "item": {
+          "id": "trust-wallet-token",
+          "coin_id": 11085,
+          "name": "Trust Wallet",
+          "symbol": "TWT",
+          "market_cap_rank": 99,
+          "thumb": "https://assets.coingecko.com/coins/images/11085/thumb/Trust.png?1588062702",
+          "small": "https://assets.coingecko.com/coins/images/11085/small/Trust.png?1588062702",
+          "large": "https://assets.coingecko.com/coins/images/11085/large/Trust.png?1588062702",
+          "slug": "trust-wallet-token",
+          "price_btc": 0.00003161052147252743,
+          "score": 2
+        }
+      },
+      {
+        "item": {
+          "id": "apecoin",
+          "coin_id": 24383,
+          "name": "ApeCoin",
+          "symbol": "APE",
+          "market_cap_rank": 48,
+          "thumb": "https://assets.coingecko.com/coins/images/24383/thumb/apecoin.jpg?1647476455",
+          "small": "https://assets.coingecko.com/coins/images/24383/small/apecoin.jpg?1647476455",
+          "large": "https://assets.coingecko.com/coins/images/24383/large/apecoin.jpg?1647476455",
+          "slug": "apecoin",
+          "price_btc": 0.00007608949573492278,
+          "score": 3
+        }
+      },
+      {
+        "item": {
+          "id": "pointpay",
+          "coin_id": 8950,
+          "name": "PointPay",
+          "symbol": "PXP",
+          "market_cap_rank": 959,
+          "thumb": "https://assets.coingecko.com/coins/images/8950/thumb/6f9823ed-464a-4413-8940-72aa61d30b43.png?1645271610",
+          "small": "https://assets.coingecko.com/coins/images/8950/small/6f9823ed-464a-4413-8940-72aa61d30b43.png?1645271610",
+          "large": "https://assets.coingecko.com/coins/images/8950/large/6f9823ed-464a-4413-8940-72aa61d30b43.png?1645271610",
+          "slug": "pointpay",
+          "price_btc": 7.144090691544175e-7,
+          "score": 4
+        }
+      },
+      {
+        "item": {
+          "id": "ovr",
+          "coin_id": 13429,
+          "name": "Ovr",
+          "symbol": "OVR",
+          "market_cap_rank": 693,
+          "thumb": "https://assets.coingecko.com/coins/images/13429/thumb/ovr_logo.png?1608518911",
+          "small": "https://assets.coingecko.com/coins/images/13429/small/ovr_logo.png?1608518911",
+          "large": "https://assets.coingecko.com/coins/images/13429/large/ovr_logo.png?1608518911",
+          "slug": "ovr",
+          "price_btc": 0.000012635549430555868,
+          "score": 5
+        }
+      },
+      {
+        "item": {
+          "id": "0x0-ai-ai-smart-contract",
+          "coin_id": 28880,
+          "name": "0x0.ai: AI Smart Contract",
+          "symbol": "0X0",
+          "market_cap_rank": 471,
+          "thumb": "https://assets.coingecko.com/coins/images/28880/thumb/0x0.png?1675140105",
+          "small": "https://assets.coingecko.com/coins/images/28880/small/0x0.png?1675140105",
+          "large": "https://assets.coingecko.com/coins/images/28880/large/0x0.png?1675140105",
+          "slug": "0x0-ai-ai-smart-contract",
+          "price_btc": 0.0000014635859553939396,
+          "score": 6
+        }
+      }
+    ],
+    "nfts": [
+      {
+        "id": "goblintown-wtf",
+        "name": "goblintown.wtf",
+        "symbol": "GOBLIN",
+        "thumb": "https://assets.coingecko.com/nft_contracts/images/393/thumb/goblintown-wtf.jpg?1653391805",
+        "nft_contract_id": 393
+      },
+      {
+        "id": "killabears",
+        "name": "KILLABEARS",
+        "symbol": "KILLABEARS",
+        "thumb": "https://assets.coingecko.com/nft_contracts/images/440/thumb/killabears.gif?1657523728",
+        "nft_contract_id": 440
+      },
+      {
+        "id": "nakamigos",
+        "name": "Nakamigos",
+        "symbol": "NKMGS",
+        "thumb": "https://assets.coingecko.com/nft_contracts/images/3134/thumb/nakamigos.png?1679536805",
+        "nft_contract_id": 3134
+      },
+      {
+        "id": "renga",
+        "name": "RENGA",
+        "symbol": "RENGA",
+        "thumb": "https://assets.coingecko.com/nft_contracts/images/1609/thumb/renga.gif?1663648984",
+        "nft_contract_id": 1609
+      },
+      {
+        "id": "mocaverse",
+        "name": "Mocaverse",
+        "symbol": "MOCA",
+        "thumb": "https://assets.coingecko.com/nft_contracts/images/2827/thumb/mocaverse.gif?1675074816",
+        "nft_contract_id": 2827
+      }
+    ],
+    "exchanges": []
+  }
