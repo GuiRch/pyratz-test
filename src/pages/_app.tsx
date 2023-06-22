@@ -1,14 +1,11 @@
 import { type AppType } from "next/app";
 import { api } from "~/utils/api";
-
 // Style & fonts
 import "~/styles/globals.css";
 import { Inter } from "next/font/google";
-
 // Next Auth
 import { type Session } from "next-auth";
 import { SessionProvider } from "next-auth/react";
-
 // RainbowKit
 import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";

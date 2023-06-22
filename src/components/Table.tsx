@@ -1,6 +1,8 @@
 import useSWR from 'swr';
 import axios from 'axios';
 import cryptoData from 'coins.json';
+import {AiFillStar, AiFillPieChart} from 'react-icons/ai';
+import {BsFillInfoCircleFill} from 'react-icons/bs';
 
 // const fetcher = (url) => axios.get(url).then((res) => res.data);
 
@@ -14,47 +16,68 @@ const Table = () => {
 //     return <div>Une erreur s'est produite lors du chargement des données.</div>;
 //   }
 
-
+  const capitalizeFirstLetter = (word) => word.charAt(0).toUpperCase() + word.slice(1);
   return (
     <>
       {!cryptoData ? (
         <div>Chargement en cours...</div>
       ) : (
-        <table >
+        <table className="min-w-">
           <tbody>
             <tr>
-              <th>#</th>
-              <th>Nom</th>
-              <th>Prix</th>
-              <th>1h %</th>
-              <th>% 24h</th>
-              <th>7d %</th>
-              <th>Cap. Marché</th>
-              <th>Volume (24 h)</th>
-              <th>Offre en Circulation</th>
+              <th className="text-xs font-bold">#</th>
+              <th className="text-xs font-bold">Nom</th>
+              <th className="text-xs font-bold">Prix</th>
+              <th className="text-xs font-bold">1h %</th>
+              <th className="text-xs font-bold">% 24h</th>
+              <th className="text-xs font-bold">7d %</th>
+              <th className="font-bold">
+                <div className="flex items-center gap-2">
+                    <span className="text-xs">
+                        Cap. Marché
+                    </span>
+                  <BsFillInfoCircleFill className="text-slate-500"/>
+                </div>
+              </th>
+              <th className="text-xs font-bold">Volume (24 h)</th>
+              <th className="text-xs font-bold">Offre en Circulation</th>
             </tr>
             {cryptoData.map((val, key) => (
               <tr key={key} className="h-20" >
-                <td className="">{val.market_cap_rank}</td>
+                <td className="text-xs font-medium text-slate-500">{val.market_cap_rank}</td>
                 <td>
-                    <div className="flex">
-                        <img className="w-5 h-5 rounded-full" src={val.image}/>
-                        {val.id} {val.symbol.toUpperCase()}
-                    </div>
+                  <div className="items-center ml-4 flex gap-1">
+                    <img
+                      className="h-6 w-6 rounded-full"
+                      src={val.image}
+                    />
+                    <span className="text-sm font-semibold">{capitalizeFirstLetter(val.id)}</span>
+                    <span className="text-sm text-gray-500">
+                      {val.symbol.toUpperCase()}
+                    </span>
+                  </div>
                 </td>
-                <td>€{val.current_price.toFixed(2)}</td>
-                <td>{val.price_change_percentage_1h_in_currency.toFixed(2)}%</td>
-                <td>{val.price_change_percentage_24h_in_currency.toFixed(2)}%</td>
-                <td>{val.price_change_percentage_7d_in_currency.toFixed(2)}%</td>
-                <td>{val.market_cap.toLocaleString("en-US")} {val.symbol.toUpperCase()}</td>
-                <td>{val.total_volume.toLocaleString("en-US")} {val.symbol.toUpperCase()}</td>
-                <td>{val.circulating_supply.toLocaleString("en-US")} {val.symbol.toUpperCase()}</td>
+                <td className="text-sm font-semibold text-slate-800">€{val.current_price.toFixed(2)}</td>
+                <td className={`text-sm font-semibold ${val.price_change_percentage_1h_in_currency > 0 ? 'text-green-500' : 'text-red-500'}`}>
+                    {/* {val.price_change_percentage_1h_in_currency > 0 ? <span className="text-sm/[5px]">H</span> : <span>K</span>} */}
+                    {val.price_change_percentage_1h_in_currency.toFixed(2)}%
+                </td>
+                <td className={`text-sm font-semibold ${val.price_change_percentage_24h_in_currency > 0 ? 'text-green-500' : 'text-red-500'}`}>
+                    {/* {val.price_change_percentage_24h_in_currency > 0 ? <span className="text-sm/[5px]">H</span> : <span>K</span>} */}
+                    {val.price_change_percentage_24h_in_currency.toFixed(2)}%
+                </td>
+                <td className={`text-sm font-semibold ${val.price_change_percentage_7d_in_currency > 0 ? 'text-green-500' : 'text-red-500'}`}>
+                    {/* {val.price_change_percentage_7d_in_currency > 0 ? <span className="text-sm/[5px]">H</span> : <span>K</span>} */}
+                    {val.price_change_percentage_7d_in_currency.toFixed(2)}%
+                </td>
+                <td className="text-sm font-semibold text-slate-800">{val.market_cap.toLocaleString("en-US")} {val.symbol.toUpperCase()}</td>
+                <td className="text-sm font-semibold text-slate-800">{val.total_volume.toLocaleString("en-US")} {val.symbol.toUpperCase()}</td>
+                <td className="text-sm font-semibold text-slate-800">{val.circulating_supply.toLocaleString("en-US")} {val.symbol.toUpperCase()}</td>
               </tr>
             ))}
           </tbody>
         </table>
       )}
-      {/* {console.log(cryptoData)} */}
     </>
   );
 };

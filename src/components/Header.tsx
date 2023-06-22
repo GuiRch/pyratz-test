@@ -13,6 +13,7 @@ const Header = () => {
         width: "100%",
         fontWeight: 600,
         fontSize: 15,
+        padding: 10
       }}
     >
       <div className="flex items-center">
