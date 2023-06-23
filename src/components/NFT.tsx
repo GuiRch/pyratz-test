@@ -1,4 +1,4 @@
-import { Alchemy, Network } from "alchemy-sdk";
+// import { Alchemy, Network } from "alchemy-sdk";
 import { useEffect, useState } from "react";
 import useSWR from "swr";
 import axios from "axios";
@@ -7,39 +7,6 @@ import axios from "axios";
 const fetcher = (url) => axios.get(url).then((res) => res.data);
 
 const NFT = () => {
-    // const settings = {
-    //   apiKey: process.env.ALCHEMY_API_KEY,
-    //   network: Network.ETH_MAINNET,
-    // };
-
-    // const alchemy = new Alchemy(settings);
-
-    // const [nfts, setNFTs] = useState([]);
-    // const contractAddress = "0xC03Cc2a63F2CCC3C14b224Bdd6EF9E3c5b368F10";
-    // const limit = 4;
-  
-    // useEffect(() => {
-    //   const fetchNFTs = async () => {
-    //     const settings = {
-    //     apiKey: process.env.ALCHEMY_API_KEY,
-    //       network: Network.ETH_MAINNET,
-    //     };
-    //     const alchemy = new Alchemy(settings);
-  
-    //     try {
-    //       const response = await alchemy.nft.getNftsForContract(contractAddress, {
-    //         limit: limit,
-    //       });
-  
-    //       setNFTs(response.data);
-    //     } catch (error) {
-    //       console.error("Error fetching NFTs:", error);
-    //     }
-    //   };
-
-    //   fetchNFTs();
-    // }, []);
-
   const apiKey = process.env.ALCHEMY_API_KEY;
 
   const { data: nfts, error } = useSWR(
@@ -52,7 +19,7 @@ const NFT = () => {
       <div className="flex flex-col items-center gap-3">
         <img src={image} className="flex mt-4 h-12 w-12 rounded-full" alt={name} />
         <div className="flex flex-col items-center gap-1">
-          <span className="text-xs font-semibold">{name}</span>
+          <span className="text-xs font-semibold text-center">{name}</span>
           <span className="text-xs/[10px] font-normal text-center">{collection}</span>
         </div>
       </div>
