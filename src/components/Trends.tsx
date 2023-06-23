@@ -1,18 +1,18 @@
 import useSWR from "swr";
 import axios from "axios";
-import trends from "trend.json";
+// import trends from "trend.json";
 
-// const fetcher = (url) => axios.get(url).then((res) => res.data);
+const fetcher = (url) => axios.get(url).then((res) => res.data);
 
 const Trends = () => {
-  // const { data: trends, error } = useSWR(
-  //   "https://api.coingecko.com/api/v3/search/trending",
-  //   fetcher
-  // );
+  const { data: trends, error } = useSWR(
+    "https://api.coingecko.com/api/v3/search/trending",
+    fetcher
+  );
 
-  // if (error) {
-  //   return <div>Une erreur s'est produite lors du chargement des données.</div>;
-  // }
+  if (error) {
+    return <div>Une erreur s'est produite lors du chargement des données.</div>;
+  }
 
   let top3Coins = [];
 

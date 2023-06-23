@@ -1,10 +1,8 @@
-// import { Alchemy, Network } from "alchemy-sdk";
 import { useEffect, useState } from "react";
 import useSWR from "swr";
 import axios from "axios";
 // import nfts from "nfts.json";
 import { ImCross } from "react-icons/im";
-import { AiFillStar, AiFillPieChart } from "react-icons/ai";
 
 const fetcher = (url) => axios.get(url).then((res) => res.data);
 
