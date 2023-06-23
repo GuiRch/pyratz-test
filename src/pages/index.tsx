@@ -12,8 +12,6 @@ import UserTokens from "~/components/UserTokens.tsx";
 import { AiFillStar, AiFillPieChart } from "react-icons/ai";
 
 export default function Home() {
-  // const hello = api.example.hello.useQuery({ text: "from tRPC" });
-
   return (
     <>
       <Head>
