@@ -23,8 +23,8 @@ export default function Home() {
       </Head>
       <main className="flex min-h-screen flex-col items-center gap-10 bg-gradient-to-b from-[#F8FAFD] to-[#FFFFFF]">
         <Header></Header>
-        <div className="flex flex-col gap-10 ">
-          <div>
+        <div className="flex flex-col gap-10 " style={{width: "75%"}}>
+          <div className="flex flex-col">
             <h1 className="text-2xl font-bold">
               Top 100 des Crypto-monnaies par capilalisation de marché
             </h1>
@@ -32,8 +32,8 @@ export default function Home() {
               La capitalisation boursièrere globale ...
             </span>
           </div>
-          <div className="flex items-stretch gap-10">
-            <Trends></Trends>
+          <div className="flex items-stretch justify-between gap-10 pl-5 pr-5 ">
+            <Trends className="flex flex-1"></Trends>
             <NFT></NFT>
             <UserTokens></UserTokens>
           </div>

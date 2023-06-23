@@ -50,9 +50,11 @@ const NFT = () => {
   const NFTCard = ({ name, image, collection }) => {
     return (
       <div className="flex flex-col items-center gap-3">
-        <img src={image} className="mt-4 h-10 w-10 rounded-full" alt={name} />
-        <span className="text-xs font-semibold">{name}</span>
-        <span className="text-xs/[10px] font-normal">{collection}</span>
+        <img src={image} className="flex mt-4 h-12 w-12 rounded-full" alt={name} />
+        <div className="flex flex-col items-center gap-1">
+          <span className="text-xs font-semibold">{name}</span>
+          <span className="text-xs/[10px] font-normal text-center">{collection}</span>
+        </div>
       </div>
     );
   };
@@ -81,7 +83,7 @@ const NFT = () => {
   };
 
   return (
-    <div>
+    <div className="flex flex-1 flex-col">
       <div className="align-center flex flex-row gap-2">
         <span role="img" aria-label="clock">
           🕔

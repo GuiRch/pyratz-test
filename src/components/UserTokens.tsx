@@ -5,7 +5,7 @@ const UserTokens = () => {
   const capitalizeFirstLetter = (word) => word.charAt(0).toUpperCase() + word.slice(1);
 
   return (
-    <div>
+    <div className="flex flex-1 flex-col">
       <div className="flex flex-row align-center gap-2">
         <span role="img" aria-label="heavy-dollar-sign">
         💲
