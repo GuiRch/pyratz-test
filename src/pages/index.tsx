@@ -32,12 +32,11 @@ export default function Home() {
               La capitalisation boursièrere globale ...
             </span>
           </div>
-          <div className="flex items-stretch justify-between gap-10 pl-5 pr-5 ">
-            <Trends className="flex flex-1"></Trends>
+          <div className="flex items-stretch justify-between gap-5 pl-5 pr-5 ">
+            <Trends></Trends>
             <NFT></NFT>
             <UserTokens></UserTokens>
           </div>
-
           <div className="flex flex-col gap-7">
             <div className="flex items-center gap-16">
               <div className="flex gap-5">

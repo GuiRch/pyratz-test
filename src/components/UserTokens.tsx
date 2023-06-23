@@ -34,7 +34,7 @@ const UserTokens = () => {
     word.charAt(0).toUpperCase() + word.slice(1);
 
   return (
-    <div className="flex flex-1 flex-col">
+    <div className="flex flex-1 flex-col rounded shadow-sm p-2">
       <div className="align-center flex flex-row gap-2">
         <span role="img" aria-label="heavy-dollar-sign">
           💲

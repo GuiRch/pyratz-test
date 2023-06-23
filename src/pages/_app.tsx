@@ -19,7 +19,7 @@ import { publicProvider } from "wagmi/providers/public";
 const inter = Inter({ subsets: ["latin"] });
 
 const { chains, publicClient } = configureChains(
-  [mainnet, polygon, optimism, arbitrum],
+  [mainnet],
   [
     // alchemyProvider({ apiKey: process.env.ALCHEMY_ID }),
     publicProvider(),
