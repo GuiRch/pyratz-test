@@ -1,10 +1,12 @@
 import useSWR from "swr";
 import axios from "axios";
+import { useEffect, useState } from "react";
 // import trends from "trend.json";
 
-const fetcher = (url) => axios.get(url).then((res) => res.data);
+const fetcher = (url : string) => axios.get(url).then((res) => res.data);
 
 const Trends = () => {
+  const [top3Coins, setTop3Coins] = useState([])
   const { data: trends, error } = useSWR(
     "https://api.coingecko.com/api/v3/search/trending",
     fetcher
@@ -14,16 +16,19 @@ const Trends = () => {
     return <div>Une erreur s'est produite lors du chargement des données.</div>;
   }
 
-  let top3Coins = [];
+  useEffect(() => {
+    if (trends) {
+      try {
+        setTop3Coins(trends.coins.slice(0, 3));
+      } catch (error) {
+        console.error(
+          "Une erreur s'est produite lors de l'accès à trends.coins :",
+          error
+        );
+      }
+    }
 
-  try {
-    top3Coins = trends.coins.slice(0, 3);
-  } catch (error) {
-    console.error(
-      "Une erreur s'est produite lors de l'accès à trends.coins :",
-      error
-    );
-  }
+  }, [trends])
 
   const capitalizeFirstLetter = (word) =>
     word.charAt(0).toUpperCase() + word.slice(1);

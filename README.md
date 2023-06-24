@@ -46,3 +46,4 @@ A lot of improvment can be made with this app. Here is a list of some of them :
 * Types : Use better typing pratice to create a more robust app
 * Authentication : As said before, an authentication should be implemented to secure the wallet connection
 * UI : The integration is not pixel perfect and some elements should be improved to math perfectly the model 
+* Clean : remove all useless stuff
