@@ -30,7 +30,7 @@ const Trends = () => {
 
   }, [trends])
 
-  const capitalizeFirstLetter = (word) =>
+  const capitalizeFirstLetter = (word: string) =>
     word.charAt(0).toUpperCase() + word.slice(1);
 
   return (
@@ -47,7 +47,7 @@ const Trends = () => {
       ) : (
         <table>
           <tbody>
-            {top3Coins.map((val, key) => (
+            {top3Coins.map((val: any, key: number) => (
               <tr key={key} className="h-10">
                 <td className="text-xs font-normal text-gray-500">{key + 1}</td>
                 <td>

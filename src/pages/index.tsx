@@ -2,26 +2,25 @@
 import Head from "next/head";
 // import Link from "next/link";
 // import { api } from "~/utils/api";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 // Components
-import Header from "~/components/Header.tsx";
-import Table from "~/components/Table.tsx";
-import Trends from "~/components/Trends.tsx";
-import NFT from "~/components/NFT.tsx";
-import UserTokens from "~/components/UserTokens.tsx";
+import Header from "~/components/Header";
+import Table from "~/components/Table";
+import Trends from "~/components/Trends";
+import NFT from "~/components/NFT";
+import UserTokens from "~/components/UserTokens";
 // Fetch data
 import useSWR from "swr";
 import axios from "axios";
 // Icons
 import { AiFillStar, AiFillPieChart } from "react-icons/ai";
 
-const fetcher = (url) => axios.get(url).then((res) => res.data);
+const fetcher = (url: string) => axios.get(url).then((res) => res.data);
 
 export default function Home() {
   const {
     data: globalMarket,
     error,
-    isLoading,
   } = useSWR("https://api.coinpaprika.com/v1/global", fetcher);
 
   return (

@@ -17,7 +17,7 @@ const Header = () => {
       }}
     >
       <div className="flex items-center">
-        <img src="./images/Coinmarketcap.png" className="w-45 mr-7 h-14" />
+        <img src="./images/Coinmarketcap.png" className="w-45 mr-7 h-14" alt="logo-coin-market-cap"/>
         <div className="flex gap-5">
           <span>Crypto-Monnaies</span>
           <span>Plateforme d'échanges</span>

@@ -7,7 +7,7 @@ import axios from "axios";
 import { AiFillStar, AiFillPieChart } from "react-icons/ai";
 import { BsFillInfoCircleFill } from "react-icons/bs";
 
-const fetcher = (url) => axios.get(url).then((res) => res.data);
+const fetcher = (url: string) => axios.get(url).then((res) => res.data);
 
 const Table = () => {
   const { data: cryptoData, error } = useSWR(
@@ -19,7 +19,7 @@ const Table = () => {
     return <div>Une erreur s'est produite lors du chargement des données.</div>;
   }
 
-  const capitalizeFirstLetter = (word) =>
+  const capitalizeFirstLetter = (word: string) =>
     word.charAt(0).toUpperCase() + word.slice(1);
   return (
     <>
@@ -48,7 +48,7 @@ const Table = () => {
             </tr>
           </thead>
           <tbody>
-            {cryptoData.map((val, key) => (
+            {cryptoData.map((val: any, key: number) => (
               <tr key={key} className="h-20">
                 <td className="text-xs font-medium text-slate-500">
                   {val.market_cap_rank}

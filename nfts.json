@@ -1,201 +1,34 @@
-{
-    "nfts": [
-      {
-        "contract": {
-          "address": "0xC03Cc2a63F2CCC3C14b224Bdd6EF9E3c5b368F10",
-          "name": "A Time I Can't Recall",
-          "symbol": "jMT",
-          "totalSupply": "111",
-          "tokenType": "ERC721",
-          "contractDeployer": "0xbc1dCc49ee73022058431e55C646B35f85ACA8DD",
-          "deployedBlockNumber": 17005855,
-          "openSeaMetadata": {
-            "floorPrice": null,
-            "collectionName": null,
-            "safelistRequestStatus": null,
-            "imageUrl": null,
-            "description": null,
-            "externalUrl": null,
-            "twitterUsername": null,
-            "discordUrl": null,
-            "lastIngestedAt": "2023-04-17T13:38:13.000Z"
-          },
-          "isSpam": null,
-          "spamClassifications": []
-        },
-        "tokenId": "1",
-        "tokenType": "ERC721",
-        "name": "I Can't Recall #1",
-        "description": "A Time I Can't Recall is a collection of 111 digital paintings, created by an AI model that was trained on the abstract paintings of jamesMendenhall (https://www.jamesmendenhall.art/paintings).",
-        "image": {
-          "cachedUrl": "https://nft-cdn.alchemy.com/eth-mainnet/27eb2ce9b50adc2a50f92dec9a8a8207",
-          "thumbnailUrl": "https://res.cloudinary.com/alchemyapi/image/upload/thumbnailv2/eth-mainnet/27eb2ce9b50adc2a50f92dec9a8a8207",
-          "pngUrl": "https://res.cloudinary.com/alchemyapi/image/upload/convert-png/eth-mainnet/27eb2ce9b50adc2a50f92dec9a8a8207",
-          "contentType": "image/png",
-          "size": 6147927,
-          "originalUrl": "https://ipfs.io/ipfs/bafybeiau2zar2ypdwslvdnwepaxggpywmvzwg2y3jcl4h6tbjbroxjljha/1.png"
-        },
-        "raw": {
-          "tokenUri": "ipfs://bafybeicnybxtje7duyic65bys4g4ww3h36yik3vk75e3rquhwk6w4jjn6q/1",
-          "metadata": {
-            "name": "I Can't Recall #1",
-            "description": "A Time I Can't Recall is a collection of 111 digital paintings, created by an AI model that was trained on the abstract paintings of jamesMendenhall (https://www.jamesmendenhall.art/paintings).",
-            "image": "ipfs://bafybeiau2zar2ypdwslvdnwepaxggpywmvzwg2y3jcl4h6tbjbroxjljha/1.png",
-            "attributes": [],
-            "compiler": "HeyMint CSV-to-Metadata Converter (heymint.xyz)"
-          },
-          "error": null
-        },
-        "tokenUri": "https://ipfs.io/ipfs/bafybeicnybxtje7duyic65bys4g4ww3h36yik3vk75e3rquhwk6w4jjn6q/1",
-        "timeLastUpdated": "2023-06-22T16:42:39.359Z"
-      },
-      {
-        "contract": {
-          "address": "0xC03Cc2a63F2CCC3C14b224Bdd6EF9E3c5b368F10",
-          "name": "A Time I Can't Recall",
-          "symbol": "jMT",
-          "totalSupply": "111",
-          "tokenType": "ERC721",
-          "contractDeployer": "0xbc1dCc49ee73022058431e55C646B35f85ACA8DD",
-          "deployedBlockNumber": 17005855,
-          "openSeaMetadata": {
-            "floorPrice": null,
-            "collectionName": null,
-            "safelistRequestStatus": null,
-            "imageUrl": null,
-            "description": null,
-            "externalUrl": null,
-            "twitterUsername": null,
-            "discordUrl": null,
-            "lastIngestedAt": "2023-04-17T13:38:13.000Z"
-          },
-          "isSpam": null,
-          "spamClassifications": []
-        },
-        "tokenId": "2",
-        "tokenType": "ERC721",
-        "name": "I Can't Recall #2",
-        "description": "A Time I Can't Recall is a collection of 111 digital paintings, created by an AI model that was trained on the abstract paintings of jamesMendenhall (https://www.jamesmendenhall.art/paintings).",
-        "image": {
-          "cachedUrl": "https://nft-cdn.alchemy.com/eth-mainnet/45a961d5949de7799257764201c00db6",
-          "thumbnailUrl": "https://res.cloudinary.com/alchemyapi/image/upload/thumbnailv2/eth-mainnet/45a961d5949de7799257764201c00db6",
-          "pngUrl": "https://res.cloudinary.com/alchemyapi/image/upload/convert-png/eth-mainnet/45a961d5949de7799257764201c00db6",
-          "contentType": "image/png",
-          "size": 8139510,
-          "originalUrl": "https://ipfs.io/ipfs/bafybeiau2zar2ypdwslvdnwepaxggpywmvzwg2y3jcl4h6tbjbroxjljha/2.png"
-        },
-        "raw": {
-          "tokenUri": "ipfs://bafybeicnybxtje7duyic65bys4g4ww3h36yik3vk75e3rquhwk6w4jjn6q/2",
-          "metadata": {
-            "name": "I Can't Recall #2",
-            "description": "A Time I Can't Recall is a collection of 111 digital paintings, created by an AI model that was trained on the abstract paintings of jamesMendenhall (https://www.jamesmendenhall.art/paintings).",
-            "image": "ipfs://bafybeiau2zar2ypdwslvdnwepaxggpywmvzwg2y3jcl4h6tbjbroxjljha/2.png",
-            "attributes": [],
-            "compiler": "HeyMint CSV-to-Metadata Converter (heymint.xyz)"
-          },
-          "error": null
-        },
-        "tokenUri": "https://ipfs.io/ipfs/bafybeicnybxtje7duyic65bys4g4ww3h36yik3vk75e3rquhwk6w4jjn6q/2",
-        "timeLastUpdated": "2023-04-20T17:16:37.551Z"
-      },
-      {
-        "contract": {
-          "address": "0xC03Cc2a63F2CCC3C14b224Bdd6EF9E3c5b368F10",
-          "name": "A Time I Can't Recall",
-          "symbol": "jMT",
-          "totalSupply": "111",
-          "tokenType": "ERC721",
-          "contractDeployer": "0xbc1dCc49ee73022058431e55C646B35f85ACA8DD",
-          "deployedBlockNumber": 17005855,
-          "openSeaMetadata": {
-            "floorPrice": null,
-            "collectionName": null,
-            "safelistRequestStatus": null,
-            "imageUrl": null,
-            "description": null,
-            "externalUrl": null,
-            "twitterUsername": null,
-            "discordUrl": null,
-            "lastIngestedAt": "2023-04-17T13:38:13.000Z"
-          },
-          "isSpam": null,
-          "spamClassifications": []
-        },
-        "tokenId": "3",
-        "tokenType": "ERC721",
-        "name": "I Can't Recall #3",
-        "description": "A Time I Can't Recall is a collection of 111 digital paintings, created by an AI model that was trained on the abstract paintings of jamesMendenhall (https://www.jamesmendenhall.art/paintings).",
-        "image": {
-          "cachedUrl": "https://nft-cdn.alchemy.com/eth-mainnet/3946c85b0be4105418e587be2991a06e",
-          "thumbnailUrl": "https://res.cloudinary.com/alchemyapi/image/upload/thumbnailv2/eth-mainnet/3946c85b0be4105418e587be2991a06e",
-          "pngUrl": "https://res.cloudinary.com/alchemyapi/image/upload/convert-png/eth-mainnet/3946c85b0be4105418e587be2991a06e",
-          "contentType": "image/png",
-          "size": 7705351,
-          "originalUrl": "https://ipfs.io/ipfs/bafybeiau2zar2ypdwslvdnwepaxggpywmvzwg2y3jcl4h6tbjbroxjljha/3.png"
-        },
-        "raw": {
-          "tokenUri": "ipfs://bafybeicnybxtje7duyic65bys4g4ww3h36yik3vk75e3rquhwk6w4jjn6q/3",
-          "metadata": {
-            "name": "I Can't Recall #3",
-            "description": "A Time I Can't Recall is a collection of 111 digital paintings, created by an AI model that was trained on the abstract paintings of jamesMendenhall (https://www.jamesmendenhall.art/paintings).",
-            "image": "ipfs://bafybeiau2zar2ypdwslvdnwepaxggpywmvzwg2y3jcl4h6tbjbroxjljha/3.png",
-            "attributes": [],
-            "compiler": "HeyMint CSV-to-Metadata Converter (heymint.xyz)"
-          },
-          "error": null
-        },
-        "tokenUri": "https://ipfs.io/ipfs/bafybeicnybxtje7duyic65bys4g4ww3h36yik3vk75e3rquhwk6w4jjn6q/3",
-        "timeLastUpdated": "2023-05-01T19:15:52.735Z"
-      },
-      {
-        "contract": {
-          "address": "0xC03Cc2a63F2CCC3C14b224Bdd6EF9E3c5b368F10",
-          "name": "A Time I Can't Recall",
-          "symbol": "jMT",
-          "totalSupply": "111",
-          "tokenType": "ERC721",
-          "contractDeployer": "0xbc1dCc49ee73022058431e55C646B35f85ACA8DD",
-          "deployedBlockNumber": 17005855,
-          "openSeaMetadata": {
-            "floorPrice": null,
-            "collectionName": null,
-            "safelistRequestStatus": null,
-            "imageUrl": null,
-            "description": null,
-            "externalUrl": null,
-            "twitterUsername": null,
-            "discordUrl": null,
-            "lastIngestedAt": "2023-04-17T13:38:13.000Z"
-          },
-          "isSpam": null,
-          "spamClassifications": []
-        },
-        "tokenId": "4",
-        "tokenType": "ERC721",
-        "name": "I Can't Recall #4",
-        "description": "A Time I Can't Recall is a collection of 111 digital paintings, created by an AI model that was trained on the abstract paintings of jamesMendenhall (https://www.jamesmendenhall.art/paintings).",
-        "image": {
-          "cachedUrl": "https://nft-cdn.alchemy.com/eth-mainnet/b0245ba67da86d396e8c348c188b56d7",
-          "thumbnailUrl": "https://res.cloudinary.com/alchemyapi/image/upload/thumbnailv2/eth-mainnet/b0245ba67da86d396e8c348c188b56d7",
-          "pngUrl": "https://res.cloudinary.com/alchemyapi/image/upload/convert-png/eth-mainnet/b0245ba67da86d396e8c348c188b56d7",
-          "contentType": "image/png",
-          "size": 7592479,
-          "originalUrl": "https://ipfs.io/ipfs/bafybeiau2zar2ypdwslvdnwepaxggpywmvzwg2y3jcl4h6tbjbroxjljha/4.png"
-        },
-        "raw": {
-          "tokenUri": "ipfs://bafybeicnybxtje7duyic65bys4g4ww3h36yik3vk75e3rquhwk6w4jjn6q/4",
-          "metadata": {
-            "name": "I Can't Recall #4",
-            "description": "A Time I Can't Recall is a collection of 111 digital paintings, created by an AI model that was trained on the abstract paintings of jamesMendenhall (https://www.jamesmendenhall.art/paintings).",
-            "image": "ipfs://bafybeiau2zar2ypdwslvdnwepaxggpywmvzwg2y3jcl4h6tbjbroxjljha/4.png",
-            "attributes": [],
-            "compiler": "HeyMint CSV-to-Metadata Converter (heymint.xyz)"
-          },
-          "error": null
-        },
-        "tokenUri": "https://alchemy.mypinata.cloud/ipfs/bafybeicnybxtje7duyic65bys4g4ww3h36yik3vk75e3rquhwk6w4jjn6q/4",
-        "timeLastUpdated": "2023-04-20T17:19:37.213Z"
-      }
-    ],
-    "pageKey": "0x0000000000000000000000000000000000000000000000000000000000000005"
+[
+  {
+    "collection": "A Time I Can't Recall",
+    "contractDeployer": "0xbc1dCc49ee73022058431e55C646B35f85ACA8DD",
+    "address": "0xC03Cc2a63F2CCC3C14b224Bdd6EF9E3c5b368F10",
+    "tokenId": "1",
+    "name": "I Can't Recall #1",
+    "image": "https://res.cloudinary.com/alchemyapi/image/upload/thumbnailv2/eth-mainnet/27eb2ce9b50adc2a50f92dec9a8a8207"
+  },
+  {
+    "collection": "A Time I Can't Recall",
+    "contractDeployer": "0xbc1dCc49ee73022058431e55C646B35f85ACA8DD",
+    "address": "0xC03Cc2a63F2CCC3C14b224Bdd6EF9E3c5b368F10",
+    "tokenId": "2",
+    "name": "I Can't Recall #1",
+    "image": "https://res.cloudinary.com/alchemyapi/image/upload/thumbnailv2/eth-mainnet/27eb2ce9b50adc2a50f92dec9a8a8207"
+  },
+  {
+    "collection": "A Time I Can't Recall",
+    "contractDeployer": "0xbc1dCc49ee73022058431e55C646B35f85ACA8DD",
+    "address": "0xC03Cc2a63F2CCC3C14b224Bdd6EF9E3c5b368F10",
+    "tokenId": "3",
+    "name": "I Can't Recall #1",
+    "image": "https://res.cloudinary.com/alchemyapi/image/upload/thumbnailv2/eth-mainnet/27eb2ce9b50adc2a50f92dec9a8a8207"
+  },
+  {
+    "collection": "A Time I Can't Recall",
+    "contractDeployer": "0xbc1dCc49ee73022058431e55C646B35f85ACA8DD",
+    "address": "0xC03Cc2a63F2CCC3C14b224Bdd6EF9E3c5b368F10",
+    "tokenId": "4",
+    "name": "I Can't Recall #1",
+    "image": "https://res.cloudinary.com/alchemyapi/image/upload/thumbnailv2/eth-mainnet/27eb2ce9b50adc2a50f92dec9a8a8207"
   }
+]
