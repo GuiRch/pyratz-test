@@ -68,7 +68,6 @@ const UserTokens = () => {
                   {val.image && typeof val.image === "string" && (
                     <img className="h-5 w-5 rounded-full" src={val.image} />
                   )}
-                    {/* <img className="h-5 w-5 rounded-full" src={val.image} /> */}
                     <span className="text-sm font-semibold">
                       {capitalizeFirstLetter(val.name!)}
                     </span>

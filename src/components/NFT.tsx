@@ -39,8 +39,6 @@ const NFT = () => {
     fetcher
   );
 
-  // const error = false;
-
   const handleNFTDetails = (nft: NFT | null = null) => {
     if (!showDetails) {
       setNftToDisplay(nft);

@@ -15,16 +15,9 @@ import { mainnet } from "wagmi/chains";
 // import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 
-// If loading a variable font, you don't need to specify the font weight
 const inter = Inter({ subsets: ["latin"] });
 
-const { chains, publicClient } = configureChains(
-  [mainnet],
-  [
-    // alchemyProvider({ apiKey: process.env.ALCHEMY_ID }),
-    publicProvider(),
-  ]
-);
+const { chains, publicClient } = configureChains([mainnet], [publicProvider()]);
 
 const { connectors } = getDefaultWallets({
   appName: "My RainbowKit App",
