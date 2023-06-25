@@ -127,7 +127,7 @@ const NFT = () => {
         return nfts.map((nft: NFT, key: number) => (
 
           <NFTCard
-            key={nft.tokenId}
+            key={key}
             image={nft.image}
             name={nft.name}
             address={nft.address}

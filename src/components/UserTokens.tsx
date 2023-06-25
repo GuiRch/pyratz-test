@@ -1,6 +1,5 @@
 import { useAccount } from "wagmi";
 import { useEffect, useState } from "react";
-import { Alchemy, Network } from "alchemy-sdk";
 import { getBalance } from "~/utils/getBalance";
 
 interface Token {
